@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <!------------ header content -------- -->
+ <header>
+    <p>File</p>
+    <p class="home">Home</p>
+    <p>Insert</p>
+    <p>Layout</p>
+    <p>Help</p>
+ </header>
+
+ <!------------ edit element div ------------->
+<div class="editItem">
+<img src="./assets/copy.png" alt="copy">
+<img src="./assets/scissors.png" alt="cut">
+<img src="./assets/paste.png" alt="paste">
+<select name="" id="">
+    <option value="">MonoSpace</option>
+    <option value="">Sans-serif</option>
+    <option value="">Fantacy</option>
+    <option value="">Cursive</option>
+</select>
+<select name="" id="">
+    <option value="">14</option>
+    <option value="">16</option>
+    <option value="">18</option>
+    <option value="">24</option>
+</select>
+<img src="./assets/bold-text-option.png" alt="B"width="10px" height="10px">
+<img src="./assets/italic.png" alt="I">
+<img src="./assets/underline.png" alt="U">
+<img src="./assets/align-right.png" alt="right">
+<img src="./assets/format.png" alt="center">
+<img src="./assets/left-align.png" alt="left">
+<img src="./assets/font.png" alt="A">
+<img src="./assets/bucket.png" alt="color">
+<img src="./assets/cloud-download.png" alt="download">
+<img src="./assets/cloud-computing.png" alt="upload">
+</div>
+ 
+ <!------------- input element  --------->
+
+ <div class="inputelement">
+    <div class="currentCell">
+       Cell
+    </div>
+    <img src="./assets/function.png" alt="Fx" width="25px" height="25x">
+    <input type="text"class="currentCellText">
+ </div>
+
+ <!------------ Excel sheet --------------->
+ <div class="sheet">
+    <table>
+        <thead>
+            <tr id="TheadRow">
+                <th class="emptycell"></th>
+                <!-- <th>A</th>
+                <th>B</th>
+                <th>C</th> -->
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            <!-- <tr><th>1</th></tr>
+            <tr><th>2</th></tr> -->
+        </tbody>
+     </table>
+ </div>
+  
+   <!-- footer section   -->
+   <div class="footer">
+    <img src="./assets/add.png" alt="add">
+    <div>
+        Sheet 1
+    </div>
+   </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
