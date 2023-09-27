@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Excel</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/excel.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,31 +21,44 @@
 
  <!------------ edit element div ------------->
 <div class="editItem">
-<img src="./assets/copy.png" alt="copy">
-<img src="./assets/scissors.png" alt="cut">
-<img src="./assets/paste.png" alt="paste">
-<select name="" id="">
-    <option value="">MonoSpace</option>
-    <option value="">Sans-serif</option>
-    <option value="">Fantacy</option>
-    <option value="">Cursive</option>
+<img src="./assets/copy.png" alt="copy" id="copy">
+<img src="./assets/scissors.png" alt="cut" id="cut">
+<img src="./assets/paste.png" alt="paste" id="paste">
+<select id="font-style">
+    <option value="monospace">MonoSpace</option>
+    <option value="sans-serif">Sans-serif</option>
+    <option value="fantacy">Fantacy</option>
+    <option value="cursive">Cursive</option>
 </select>
-<select name="" id="">
-    <option value="">14</option>
-    <option value="">16</option>
-    <option value="">18</option>
-    <option value="">24</option>
+<select id="font-size">
+    <option value="14px">14</option>
+    <option value="16px">16</option>
+    <option value="18px">18</option>
+    <option value="24px">24</option>
 </select>
-<img src="./assets/bold-text-option.png" alt="B"width="10px" height="10px">
-<img src="./assets/italic.png" alt="I">
-<img src="./assets/underline.png" alt="U">
-<img src="./assets/align-right.png" alt="right">
-<img src="./assets/format.png" alt="center">
-<img src="./assets/left-align.png" alt="left">
-<img src="./assets/font.png" alt="A">
-<img src="./assets/bucket.png" alt="color">
-<img src="./assets/cloud-download.png" alt="download">
-<img src="./assets/cloud-computing.png" alt="upload">
+<img src="./assets/bold-text-option.png" alt="B"width="10px" height="10px" id="boldbtn">
+<img src="./assets/italic.png" alt="I" id="italicbtn">
+<img src="./assets/underline.png" alt="U" id="underlinebtn">
+<!-- alignment of text -->
+<img src="./assets/align-left.png" alt="left" id="align-left">
+<img src="./assets/format.png" alt="center" id="align-center">
+<img src="./assets/align-right.png" alt="right" id="align-right">
+<!-- font and bg color  -->
+<div>
+    <label for="textColor"><img src="./assets/font.png" alt="A"></label>
+    <input type="color" id="textColor">
+    <label for="bgcolor"><img src="./assets/bucket.png" alt="color"></label>
+    <input type="color" id="bgcolor"/>
+</div>
+
+ <!-- download and upload file -->
+<img src="./assets/cloud-download.png" alt="download" id="download">
+<div>
+   <label for="upload-input"><img src="./assets/cloud-computing.png" alt="upload" for="upload-input"></label> 
+    <input type="file" accept=".json" id="upload-input"/>
+</div>
+
+
 </div>
  
  <!------------- input element  --------->
@@ -55,7 +68,7 @@
        Cell
     </div>
     <img src="./assets/function.png" alt="Fx" width="25px" height="25x">
-    <input type="text"class="currentCellText">
+    <input type="text"id="currentCellText">
  </div>
 
  <!------------ Excel sheet --------------->
@@ -78,10 +91,8 @@
   
    <!-- footer section   -->
    <div class="footer">
-    <img src="./assets/add.png" alt="add">
-    <div>
-        Sheet 1
-    </div>
+    <img src="./assets/add.png" alt="add" id="add-sheet">
+    <div id="sheet-1" onclick="viewSheet(event)"> Sheet 1 </div>
    </div>
 
 

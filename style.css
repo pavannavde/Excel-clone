@@ -49,12 +49,34 @@ header>p{
     height:20px;
     transition: all 0.5s ease;
 }
+.editItem>div{
+    display: flex;
+}
+.editItem>div>input{
+   visibility: hidden;
+   width:30px;
+}  
+.editItem>div>label>img{
+    width:20px;
+    height:20px;
+    transition: all 0.5s ease;
+}
+.editItem>div>label>img:hover{
+    background-color:rgb(143, 150, 149);
+    scale: 1.1;
+}
 .editItem>img:hover{
     background-color:rgb(143, 150, 149);
     scale: 1.2;
 }
 .editItem>select{
     height:20px;
+}
+#boldbtn,#italicbtn,#underlinebtn{
+    padding:2px;
+    border-radius: 2px;
+    width:16px;
+    height: 16px;
 }
 .inputelement{
     display: flex;
@@ -107,14 +129,7 @@ table{
     background-color: darkslategrey;
 
 }
-thead{
-   /* position:sticky;
-   top:136px;
-   background-color: #dfe4ea;
-   border: 1px solid black;
-   z-index: 0; */
-  /* z-index: 2; */
-}
+
 td,th{
     border:1px solid darkgray;
     min-width: 60px;
@@ -124,9 +139,7 @@ td,th{
     /* border-collapse: collapse; */
 
 }
-tbody{
-    overflow: scroll;
-}
+
 .footer{
     display: flex;
     width:100vw;
@@ -145,4 +158,11 @@ tbody{
     background-color: #90adcf;
     padding-inline:5px;
     padding-block: 3px;
+    text-decoration: 3px  underline;
+    font-weight: 900;
+    cursor: pointer;
+}
+#upload-input{
+    width:0px;
+    visibility:hidden;
 }
